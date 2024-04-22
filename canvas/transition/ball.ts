@@ -42,7 +42,9 @@ class Ball {
         }
 
         const elapsedTime = timestamp - this.startTime;
-        const steps = ( this.duration / 1000 ) * 63     // fps : 63
+        // fps 기본값 60, 변환이 적용되는 환경에 따라서 설정해주세요.
+        const FPS = 60
+        const steps = ( this.duration / 1000 ) * FPS
         const progress = Math.min( 1, elapsedTime / this.duration )
 
         if (progress < 1){
