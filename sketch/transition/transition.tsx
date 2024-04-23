@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import { useCanvas } from '@/app/components/hooks/useCanvas'
+import { useCanvas } from './useCanvas'
 import * as d3 from 'd3'
 
 export function Transition() {
