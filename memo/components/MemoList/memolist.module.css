@@ -1,0 +1,31 @@
+.list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: rgb(255, 247, 211);
+    overflow:hidden;
+    transition: all 1s;
+}
+
+.list ul{
+    margin-top : 3rem;
+    padding: 0 2rem;
+}
+
+.list ul li button{
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+    overflow:hidden;
+    text-align: left;
+    background: transparent;
+}
+
+.open{
+    width: 100%;
+}
+
+.closed{
+    width: 0%;
+}
