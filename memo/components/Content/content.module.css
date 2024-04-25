@@ -6,14 +6,14 @@
 }
 
 .form input[type='text']{
-    background-color: #fff1c3;
+    background-color: var(--color-bg-title);
     border:none;
     padding: 4px 1rem;
     height:2rem;
 }
 
 .form textarea{
-    background-color: #fff9dc;
+    background-color: var(--color-bg-content);
     padding: 1rem;
     min-height: 370px;
     border:none;
@@ -31,7 +31,7 @@
 }
 
 .form button svg{
-    background-color: rgb(255, 155, 73);
+    background-color: var(--color-bg-accent);
     color: #ffffff;
     width:100%;
     height: 100%;
