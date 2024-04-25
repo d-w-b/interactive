@@ -1,0 +1,21 @@
+.base{
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    padding: 4px 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(252, 196, 151);
+}
+
+.base button{
+    cursor: pointer;
+    background: none;
+    border:none;
+    border-radius: 10px;
+}
+.base button svg{
+    width: 20px;
+    height: 20px;
+    color: #555;
+}

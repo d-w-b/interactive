@@ -1,0 +1,38 @@
+.list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: var(--color-bg-list);
+    overflow-x:hidden;
+    overflow-y:auto;
+    z-index: 100;
+    transition: all 400ms ease-out;
+}
+
+.list ul{
+    margin-top : 3rem;
+    padding: 0 2rem;
+}
+.list ul li{
+    margin : 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+}
+
+.list ul li button{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow:hidden;
+    text-align: left;
+    background: transparent;
+}
+
+.open{
+    width: 100%;
+}
+
+.closed{
+    width: 0%;
+}
