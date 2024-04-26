@@ -20,6 +20,11 @@
     outline: none;
 }
 
+body{
+    background: rgb(236,244,255);
+    background: linear-gradient(90deg, rgba(236,244,255,1) 0%, rgba(254,255,255,1) 50%, rgba(240,237,255,1) 100%);
+}
+
 a{
     text-decoration: none;
 }
@@ -27,4 +32,14 @@ a{
 button {
     background-color: #fff;
     border: none;
+}
+
+.container{
+    width: 330px;
+    border: 1px solid #eee;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    transform: translate(0, 35%);
+    box-shadow: 0 0 10px #bdbdbc;
 }

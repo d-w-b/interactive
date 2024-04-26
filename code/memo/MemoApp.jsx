@@ -22,7 +22,7 @@ export default function MemoApp() {
   },[memos])
 
   return (
-    <div style={{width:330, border:"1px solid #eee", position:'relative', overflow:'hidden'}}>
+    <div className='container'>
       <Header 
         onChangeFlag = {handleSwitchFlag}
         onModify = {handleModify}
