@@ -11,7 +11,8 @@ export default function DOMTree() {
 
   useEffect(()=>{
     // 데이터 전처리
-    const root = d3.hierarchy(document.children[0]);
+    const html = document.children[0]
+    const root = d3.hierarchy(html);
     const width = 928;
     const dx = 15;
     const dy = width / (root.height + 1);
