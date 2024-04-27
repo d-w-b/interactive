@@ -36,7 +36,6 @@ button {
 
 .container{
     width: 330px;
-    border: 1px solid #eee;
     position: relative;
     overflow: hidden;
     margin: auto;

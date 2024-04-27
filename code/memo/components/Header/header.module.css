@@ -1,7 +1,6 @@
 .base{
     display: flex;
     position: relative;
-    z-index: 1000;
     padding: 4px 1rem;
     flex-direction: row;
     justify-content: space-between;
