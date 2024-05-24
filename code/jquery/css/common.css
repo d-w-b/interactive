@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import url('all.min.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Titillium+Web&display=swap');
+html{font-size: 10px;}
+body{font-family: 'Noto Sans KR', sans-serif; color:#222; font-size: 17px;}
+img{max-width: 100%;}
+a{display:block;}
+.show{display:block;}
+.hide{display:none;}
+ul.slide-list li.fade-in {display: block; animation: slide-fade-in 0.3s ease-out 0s 1 normal forwards;}
+ul.slide-list li.fade-out {display: block; animation: slide-fade-out 0.3s ease-out 0s 1 normal forwards;}
+
+@keyframes slide-fade-in {
+    0% {opacity: 0; transform: scale(1.2);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes slide-fade-out {
+    0% {opacity: 1; transform: scale(1);}
+    100% {opacity: 0; transform: scale(1.2);}
+}
