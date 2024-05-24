@@ -2,15 +2,9 @@ import React from 'react'
 import { useEffect } from 'react';
 import * as d3 from 'd3'
 
-// DOMTree Object 를 받아서 Tree를 그려줍니다.
 export default function DOMTree() { 
-  
-  // d3.js 는 데이터를 전처리한 후
-  // 전처리된 데이터를 바탕으로 레이아웃을 계산합니다.
-  // 계산된 레이아웃을 바탕으로 svg 를 그립니다.
 
   useEffect(()=>{
-    // 데이터 전처리
     const html = document.children[0]
     const root = d3.hierarchy(html);
     const width = 928;
@@ -19,10 +13,8 @@ export default function DOMTree() {
   
     const tree = d3.tree().nodeSize([dx, dy]);
     root.sort((a, b) => d3.ascending(a.data.name, b.data.name));
-    // 레이아웃 계산
     tree(root);
-  
-    // 최대, 최솟값 찾아서 범위 지정
+
     let x0 = Infinity;
     let x1 = -x0;
     root.each(d => {
@@ -32,14 +24,13 @@ export default function DOMTree() {
   
     const height = x1 - x0 + dx * 2;
     
-    // svg 그리기
     const svg = d3.create("svg")
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [-dy / 3, x0 - dx, width, height])
         .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;");
     
-    // edge
+
     const link = svg.append("g")
         .attr("fill", "none")
         .attr("stroke", "#fabbab")
@@ -52,7 +43,6 @@ export default function DOMTree() {
             .x(d => d.y)
             .y(d => d.x));
 
-    // vertex
     const node = svg.append("g")
         .attr("stroke-linejoin", "round")
         .attr("stroke-width", 3)
