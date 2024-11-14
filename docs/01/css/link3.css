@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import 'layout.css';
+ /* color:  #ffa211 */
+
+/*section 공통*/
+section{font-size: 16px; color:#585858;}
+/* sec01 */
+#sec01 .location-inner ul:last-child li{background: #ffa211 }
+
+/* sec02 */
+#sec02 > .contents{padding: 100px 0 40px 0;}
+#sec02 > .contents > a >img{width:100%;}
+#sec02 > .contents > .searchbox{background:#ffa211; width:100%; height:140px;padding:50px 50px; margin:40px 0; box-sizing: border-box;}
+#sec02 > .contents > .searchbox > select{margin-right: 10px;}
+#sec02 > .contents > .searchbox > input[type='button']:hover{background: #ffa211; color:#fff;}
+/* sec03 */
+#sec03 > .contents{position:relative; padding-top: 20px;}
+#sec03 > .contents > span.count{position:absolute; top:-40px; left:0;}
+#sec03 > .contents > span.count > em{color: #ffa211;}
+#sec03 > .contents > ul:after{content:''; display:block; clear:both;}
+#sec03 > .contents > ul > li{position:relative; top: 0; width: calc(33.333% - 20px); height:565px; margin-bottom: 40px; float:left; box-sizing: border-box; border:1px solid #ccc; transition: top 0.5s;}
+#sec03 > .contents > ul > li:hover{top: -15px;} 
+#sec03 > .contents > ul > li:nth-child(3n-1){ margin: 0 30px;}
+#sec03 > .contents > ul > li > a > img{width:100%; height:365px;}
+#sec03 > .contents > ul > li > a > .txt-info{padding:30px 30px 0 30px;}
+#sec03 > .contents > ul > li > a > .txt-info > strong{ font-family: 'Song Myung' , sans-serif; font-size: 29px; font-weight: normal; color:#222;}
+#sec03 > .contents > ul > li > a > .txt-info > p{margin-top: 10px;}
+#sec03 > .contents > ul > li > a > .txt-info > p > .info-title{position:relative; top:3px; display:inline-block;width: 100px; color:#222;}
+#sec03 > .contents > ul > li > a > .txt-info > p > .gray{display:inline-block; width:150px; vertical-align: middle;}

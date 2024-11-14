@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('layout.css');
+/*  common    */
+.fl{float:left;}
+.fr{float:right;}
+.clear:after{clear:both;}
+ dt{font-size:4.5rem; font-family: 'Song Myung', serif; margin-bottom: 5rem; color:#222;}
+ dd,.text{font-size: 1.6rem; color:#585858; line-height: 1.7;}
+.contents{min-height: 50rem;}
+.imgtxt{height:40rem; margin: 10rem 0;}
+.imgtxt:first-child .txt{padding-top: 11rem;}
+.imgtxt:nth-child(2) .txt{padding-top: 6rem;}
+.txt-iconlist-type02 ul li a:hover{background:#39b06c; color:#fff;}
+/* sec01 txt-iconlist ( 텍스트,아이콘 묶음 리스트 영역 ) */
+#sec01 .txt-iconlist{height:245px;}
+#sec01 .txt-iconlist > ul{overflow:hidden;}
+#sec01 .txt-iconlist > ul > li{position:relative;float:left; width:25%; box-sizing: border-box;font-size: 1.6rem; color:#585858;height:185px; background:url(../img/icon_introduce_01.jpg) no-repeat center 10px;}
+#sec01 .txt-iconlist > ul > li > strong{position:absolute; bottom:2.5rem; width:100%; text-align: center;}
+#sec01 .txt-iconlist > ul > li+li{border-left: 1px solid #ccc;}
+#sec01 .txt-iconlist > ul > li:nth-child(2){background-image: url(../img/icon_introduce_02.jpg)}
+#sec01 .txt-iconlist > ul > li:nth-child(3){background-image: url(../img/icon_introduce_03.jpg)}
+#sec01 .txt-iconlist > ul > li:nth-child(4){background-image: url(../img/icon_introduce_04.jpg)}
+/* sec02 */
+#sec02{background:#f6f6f6;background-size: contain; background-image: url(../img/bg_introduce_01.jpg) ; background-repeat: no-repeat; background-position:100% 0;padding-top:2rem;}
+#sec02 .imgtxt > .txt{padding: 5rem 0;}
+#sec02 .imgtxt > .txt > dl{margin-bottom: 3rem;}
+#sec02 .imgtxt > .txt > a{font-size: 1.6rem; font-weight: bold; color:#222;}
+#sec02 .imgtxt > .txt > a > em{position:relative; }
+#sec02 .imgtxt > .txt > a > em:before{position:absolute;bottom:0;left:0;display:block; width:100%; height:50%; background:rgba(80, 198, 27, 0.3);content:'';z-index:1;}
+/* sec02,sec04 공통 .txt-iconlist-type02 (텍스트,아이콘 묶음 리스트 영역) */
+.txt-iconlist-type02 > ul{margin: 4rem 0;}
+.txt-iconlist-type02 > ul > li{position:relative;width:33.333%; height:260px; float:left; background:url(../img/icon_introduce_05.jpg) no-repeat center 1rem; box-sizing: border-box;}
+.txt-iconlist-type02 > ul > li > .li-inner{position:absolute; bottom:2rem; width:100%; text-align: center;}
+.txt-iconlist-type02 > ul > li > .li-inner .text{margin: 1rem 0;}
+.txt-iconlist-type02 > ul > li > .li-inner strong{font-size: 1.5rem;}
+.txt-iconlist-type02 > ul > li+li{border-left: 1px solid #ccc;}
+.txt-iconlist-type02 > ul > li a{display:inline-block; width:120px; height:50px; line-height: 50px; font-size: 1.5rem; text-align:center; border: 1px solid #39b06c; color:#39b06c;}
+.txt-iconlist-type02 > ul > li:nth-child(2){background-image: url(../img/icon_introduce_06.jpg)}
+.txt-iconlist-type02 > ul > li:nth-child(3){background-image: url(../img/icon_introduce_07.jpg)}
+.txt-iconlist-type02 > ul > li:nth-child(4){background-image: url(../img/icon_introduce_08.jpg)}
+/* sec03 */
+#sec03{padding: 5rem 0;}
+#sec03 dl{margin: 5rem 0;}
+/* sec04 */
+#sec04{height:750px; background:#027758; padding: 10rem 0; box-sizing: border-box;}
+#sec04 dl{text-align: center; color:#fff;}
+#sec04 dl > dt{color:#fff;}
+#sec04 dl > dd{color:#b8d0ca;}
+#sec04 ul{width:1220px; margin: 4rem 0;}
+#sec04 ul > li{position:relative;width:calc(33.333% - 8rem);height:240px; border:3px solid #fff; float:left; text-align:center; margin-left: 4rem;}
+#sec04 ul > li:before{position:absolute;top:-8px;right:1.1rem;width:2px;height:4rem; transform:rotate(45deg);background:rgba(255, 255, 255, 0.5);content: '';}
+#sec04 ul > li > span{font-size: 1.8rem; font-weight: bold; color:#fff; line-height: 1.7; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);width:100%;}
+/* sec05 */
+#sec05{height:830px; text-align:center; padding:10rem 0 0 0; box-sizing: border-box;}
+#sec05 ul{overflow:hidden; margin: 5rem auto;}
+#sec05 ul > li{width:25%;}
+#sec05 ul > li:nth-child(1){background-image: url(../img/icon_introduce_08.jpg);}
+#sec05 ul > li:nth-child(2){background-image: url(../img/icon_introduce_09.jpg);}
+#sec05 ul > li:nth-child(3){background-image: url(../img/icon_introduce_10.jpg);}
+#sec05 ul > li:nth-child(4){background-image: url(../img/icon_introduce_11.jpg);}
+#sec05 p{color:#222;}
+#sec05 p:last-child{width:100%;height:15rem;margin-top:1rem;text-align: center; font-size: 2.4rem;line-height: 4rem; padding:4rem; box-sizing: border-box;
+    background:url(../img/bg_introduce_03.jpg) no-repeat right center; font-weight: bold;}
+#sec05 p > strong{color: #39b06c;}
