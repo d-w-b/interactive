@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR&family=Song+Myung&display=swap');
+@import url(all.min.css);
+@import url(reset.css);
+html{font-size: 10px;}
+body{color:#fff; font-family: 'Noto Sans KR', monospace;}
+a{display:block;}
+
+h2{font-size:6rem; font-family: 'Song Myung', serif; letter-spacing: -1px;}
+.text{font-size: 1.7rem;font-weight: bold;line-height:1.7; margin-top: 2rem;}
+header{position:fixed;top:0;left:0; background:transparent;width:100%;color:#fff;z-index: 999;border-bottom:0.5px solid rgba(204, 204, 204, 0.54);}
+header .header-wrap{height:10rem;line-height: 10rem; position:relative; width:100%;}
+header .header-wrap .logo{position:absolute;top:50%;left:10px;transform:translateY(-50%);line-height:0;}
+.gnb{width:800px;height:100%; float:left;}
+.gnb:hover{width:100%; background:#fff; color:#222;}
+.gnb:hover .gnb-sub{display:block;}
+.gnb > ul{position:absolute;top:0;left:25rem;width:800px;}
+.gnb > ul li{float:left;width:200px;}
+.gnb > ul li a{position:relative;font-size:2.3rem;font-weight: bold;text-align: center;letter-spacing:-1px;}
+.gnb > ul li a:hover{color:chocolate;}
+.gnb > ul li a:before{position:absolute;bottom:0;left:0; width:0; height:5px;background:chocolate; content:''; transition:all 0.5s;}
+.gnb > ul li a:hover:before{width:100%;}
+.gnb-sub > ul li a:hover{color:chocolate;} 
+.gnb-sub{display:none;position:absolute;top:10rem;width:100%;height:22rem;color:#585858;background:#fff;overflow:hidden;padding: 2rem 14rem; border-top:0.5px solid #ccc;}
+.gnb-sub ul{position:relative; left:10rem;float:left; width:200px; text-align:center; font-size:1.7rem;line-height:4.3rem;}
+
+.subnav{/*position:absolute;top:50%;right:5rem;transform:translateY(-50%);*/ float:right; height:100%;}
+.subnav{width:350px;height:100%; overflow:hidden;}
+.subnav ul li{float:left;}
+.subnav ul li a:hover{color:greenyellow;}
+.subnav ul:first-child{width:170px;height:100%; float:left;margin:0 2rem 0 -1rem;}
+.subnav ul:first-child li{width:75px;margin-left:10px;text-align:center;font-size:1.8rem;font-weight: bold;}
+.subnav ul:last-child{width:77px; height:100%; float:left;}
+.subnav ul:last-child li{width:38px;text-align: center; font-size:2.2rem;}
+
+.title-visual{position:relative;height:40rem;background:url(../img/img_subvisual_01.jpg) no-repeat center / cover;color:#fff; box-sizing: border-box;}
+.title-text{position:absolute; bottom:9rem;width:100%;}
+.title-visual h2{font-size: 8rem; text-align:center; font-family: 'Song Myung',serif;}
+.title-visual p{font-size: 1.8rem; text-align: center;}
+
+section .contents{width:1200px; margin:0 auto;}
+#sec01 .location{position:relative;height:70px; border-bottom: 1px solid #ccc;}
+#sec01 .location-inner{overflow:hidden;position:relative;width:1200px;height:100%;margin:0 auto; }
+#sec01 .location-menu{position:absolute; top:0; left:72px;}
+#sec01 .location-inner > a:first-child{width:70px; height:100%; line-height:70px; text-align: center; border-left:1px solid #ccc; border-right:1px solid #ccc; padding:0; font-size: 1.8rem; color:#585858;}
+#sec01 .location-menu ul{float:left;width:270px; height:70px;line-height: 70px; font-size:1.6rem; color:#585858; box-sizing: border-box;}
+#sec01 .location-menu ul:hover li{background:#fff;}
+
+#sec01 .location-inner ul li a{padding:0 30px; box-sizing: border-box;}
+#sec01 .location-inner ul+ul{position:relative;border-right: 1px solid #ccc;}
+#sec01 .location-inner ul+ul:after{position:absolute; top:-2.5px;right:1rem; display:block; content:'\f0dd'; font-family: 'Font Awesome 5 Free'; font-size: 2rem; font-weight: 600; color:#fff;}
+#sec01 .location-inner ul:last-child li{background:#027758;color:#fff; }
+#sec01 .undermenu{font-size: 1.5rem; letter-spacing: -1px;}
+#sec01 .undermenu li a{height:50px; line-height: 50px;}
+#sec01 .location-inner .undermenu.under01 li:hover{background:#f6f6f6;}
+#sec01 .location-inner .undermenu.under02 li:hover{text-decoration: underline;}
+
+#sec01 .location .btn-expand{position:absolute; right:10rem; top:0; border-right: 1px solid #ccc; border-left: 1px solid #ccc; color:#585858;}
+#sec01 .location .btn-expand a{display:inline-block; width:70px; height:70px; line-height: 70px; font-size:2rem;text-align:center; }
+#sec01 .location .btn-expand a:first-child{border-right: 1px solid #ccc;}
+
+footer{width:100%;height:23rem; border-top:0.5px solid #ccc; padding: 5rem 0 5rem 27rem; box-sizing:border-box;background:#222;}
+footer .fnb{overflow:hidden; color:#fff;}
+footer .fnb ul li a{font-size: 1.4rem;}
+footer .fnb ul li+li{position:relative;margin-left:2rem;}
+footer .fnb ul li+li:before{position:absolute;left:-1rem;bottom:0.5rem;display:block; width:2px; height:10px; background:#ccc; content:'';}
+footer .fnb ul.fnb-left{float:left;}
+footer .fnb ul.fnb-left li{float:left;}
+footer .fnb ul.fnb-right{float:right; margin-right:10rem;}
+footer .fnb ul.fnb-right li{float:left;}
+footer span+span{position:relative; display:inline-block; margin-left: 2rem;}
+footer span+span:before{position:absolute;bottom:0.2rem; left:-1rem; display:block; width:1px; height:15px; color:#ccc;background:#585858; content:'';}
+footer address{margin: 3rem 0;}
+footer address, .copy{font-size: 1.5rem; color:#ccc;} 

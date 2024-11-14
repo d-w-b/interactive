@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url('layout.css');
+body{color:#585858;}
+#wrap{overflow:hidden}
+.btn-index{display:flex; justify-content:center; margin: 10px 0 65px 0;}
+/* sec01 */
+#sec01 .location-menu ul:last-child li{background:#f55521;color:#fff;}
+/* sec02 */
+#sec02 .area-list{display:flex; justify-content: center; margin: 10rem 0 5rem 0;}
+#sec02 .area-list > li {position:relative;padding: 0 4rem 0 5rem;float:left;}
+#sec02 .area-list > li > a{font-size: 1.8rem; color:#222;}
+#sec02 .area-list > li > a:hover{color:#f55521;}
+#sec02 .area-list > li+li:before{position:absolute; left:0; top:7px;  transform:rotate(45deg); display:block; width:2px; height: 15px; background:#ccc;  content: '';}
+#sec02 .searchbox{position:relative; width:100%; height:125px; background:#f6f6f6; vertical-align: bottom;}
+#sec02 .searchbox > fieldset{width:100%; position:absolute; top:50%; left:50%; transform:translate(-25%,-50%);}
+
+/* sec03 */
+#sec03 .contents{position:relative;border-top:1.5px solid #222; margin:8rem auto;}
+#sec03 .contents .count{position:absolute; top:-3rem; left:0; font-size: 1.6rem;}
+#sec03 .contents .count strong{color:#f55521;}
+#sec03 .board-list{width:100%; height:340px; padding: 5rem 0; border-bottom: 1px solid #ccc; box-sizing: border-box;}
+/* .board-list (책소개 리스트 영역) */
+.board-list > .list-right{width:750px; padding:2rem; box-sizing: border-box;}
+.board-list > a{float:left; overflow:hidden;}
+.board-list > a+a{margin-left: 5rem;}
+.board-list > a > img{position:relative;width:380px; height:238px; transition:all 0.3s;}
+.board-list > a > img:hover{transform:scale(1.1);}
+.board-list > a > span{color:#AEAEAE; font-weight: bold; font-size: 1.6rem; margin-bottom: 10px;}
+.board-list > a > em{color:#f55521;}
+.board-list > a > cite{font-size: 2.6rem; color:#333; font-family: 'Song Myung', cursive; font-weight: normal; margin-bottom: 15px;}
+.board-list > .text{color:#888888; font-size: 1.5rem; margin:1rem 0;}
+.board-list > a > time{display:block;color:#ccc; font-size: 1.5rem; margin-top:3rem;}
